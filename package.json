@@ -1,0 +1,37 @@
+{
+  "name": "food-delivery-webapp",
+  "version": "1.0.0",
+  "description": "A frontend for food delivery app using react js and parcel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enpvivek/food-delivery-webapp.git"
+  },
+  "keywords": [
+    "reactjs",
+    "parcel",
+    "html",
+    "css",
+    "javascript",
+    "tailwind"
+  ],
+  "author": "Vivek Yadav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enpvivek/food-delivery-webapp/issues"
+  },
+  "homepage": "https://github.com/enpvivek/food-delivery-webapp#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
