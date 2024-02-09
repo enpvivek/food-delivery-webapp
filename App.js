@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 
 export function App() {
   return (
@@ -7,10 +8,13 @@ export function App() {
       {/* Header */}
       <Header />
 
-      <h1>Hello world!</h1>
-      <button className="p-2 rounded bg-blue-500 hover:bg-blue-600 transition">
+      {/* What's on Your Mind Section */}
+      <Hero />
+
+      
+      {/* <button className="p-2 rounded bg-blue-500 hover:bg-blue-600 transition">
         Click Me
-      </button>
+      </button> */}
     </div>
   );
 }
