@@ -2,7 +2,6 @@
   "name": "food-delivery-webapp",
   "version": "1.0.0",
   "description": "A frontend for food delivery app using react js and parcel.",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -31,7 +30,11 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "tailwindcss": "^3.4.1"
   }
 }
