@@ -26,48 +26,48 @@ export function Footer() {
         </div>
       </div>
       {/* footer navbar starts here */}
-      <div className="w-full h-auto bg-black text-slate-300">
+      <div className="w-full h-auto bg-black text-slate-300 pb-16">
         <div className="flex w-full h-auto lg:px-32 gap py-16">
           <div className="flex w-full flex-col base-1/4">
             <div className="flex text-2xl text-white font-extrabold my-2">
               Foodie
             </div>
-            <div className="flex">© 2023 Foodie Technologies</div>
+            <div className="flex  my-1">© 2023 Foodie Technologies</div>
           </div>
           <div className="flex w-full flex-col base-1/4">
             <div className="flex text-xl text-white font-bold my-2">
               Company
             </div>
-            <div className="flex">About</div>
-            <div className="flex">Careers</div>
-            <div className="flex">Team</div>
-            <div className="flex">Foodie One</div>
-            <div className="flex">Foodie Instamart</div>
-            <div className="flex">Foodie Genie</div>
+            <div className="flex my-1">About</div>
+            <div className="flex my-1">Careers</div>
+            <div className="flex my-1">Team</div>
+            <div className="flex my-1">Foodie One</div>
+            <div className="flex my-1">Foodie Instamart</div>
+            <div className="flex my-1">Foodie Genie</div>
           </div>
           <div className="flex w-full flex-col base-1/4">
             <div className="flex text-xl text-white font-bold my-2">
               Contact us
             </div>
-            <div className="flex">Help & Support</div>
-            <div className="flex">Partner with us</div>
-            <div className="flex mb-12">Ride with us</div>
+            <div className="flex my-1">Help & Support</div>
+            <div className="flex my-1">Partner with us</div>
+            <div className="flex my-1 mb-12">Ride with us</div>
             <div className="flex text-xl text-white font-bold my-2">Legal</div>
-            <div className="flex">Terms & Conditions</div>
-            <div className="flex">Cookie Policy</div>
-            <div className="flex">Privacy Policy</div>
+            <div className="flex my-1">Terms & Conditions</div>
+            <div className="flex my-1">Cookie Policy</div>
+            <div className="flex my-1">Privacy Policy</div>
           </div>
           <div className="flex w-full flex-col base-1/4">
             <div className="flex text-xl text-white font-bold my-2">
               We deliver to:
             </div>
-            <div className="flex">Banglore</div>
-            <div className="flex">Delhi</div>
-            <div className="flex">Hyderabad</div>
-            <div className="flex">Chennai</div>
-            <div className="flex">Mumbai</div>
-            <div className="flex">Pune</div>
-            <div className="flex ">
+            <div className="flex my-1">Banglore</div>
+            <div className="flex my-1">Delhi</div>
+            <div className="flex my-1">Hyderabad</div>
+            <div className="flex my-1">Chennai</div>
+            <div className="flex my-1">Mumbai</div>
+            <div className="flex my-1">Pune</div>
+            <div className="flex  my-1">
               <div className="border-[1px] rounded-md border-gray-600 px-2">
                 599 cities {">"}
               </div>

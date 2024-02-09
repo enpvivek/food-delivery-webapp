@@ -5,8 +5,9 @@ import { TbDiscount2, TbInfoCircle, TbUserCircle } from "react-icons/tb";
 export function Header() {
   return (
     <div className="w-full h-auto sticky top-0 z-10 flex flex-row p-4 lg:px-32 justify-between bg-primary">
-      <div className="flex flex-row">
+      <div className="flex flex-row items-center">
         <img src={logo} alt="logo" className="w-12" style={{ width: 60 }} />
+        <p className="text-white text-2xl font-bold px-4">Foodie</p>
       </div>
       <div className="flex gap-8 py-auto justify-center font-semibold text-gray-200 items-center">
         <div className="flex items-center hover:text-white hover:transition-colors hover:cursor-pointer ">
