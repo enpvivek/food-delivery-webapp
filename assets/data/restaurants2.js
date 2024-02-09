@@ -774,7 +774,7 @@ const restaurants2 = [
   {
     info: {
       id: "25397",
-      name: "Oven Story Pizza - Standout Toppings",
+      name: "Oven Story Pizza",
       cloudinaryImageId: "b39e4312ae2e9f65c3b58faaed83f488",
       locality: "Minto Road",
       areaName: "Connaught Place",

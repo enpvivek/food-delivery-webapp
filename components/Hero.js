@@ -8,13 +8,11 @@ export function Hero() {
         <h1>What's on your mind?</h1>
       </div>
       <div className="w-full flex flex-row my-5 gap-2 mb-10">
-        {suggestions.slice(0, 6).map((suggestion, index) => (
+        {suggestions.slice(0, 7).map((suggestion, index) => (
           <HeroCard key={index} props={suggestion} />
         ))}
-
-        <HeroCard props={suggestions[0]} />
       </div>
-      <hr className="w-2" />
+      <hr />
     </div>
   );
 }
