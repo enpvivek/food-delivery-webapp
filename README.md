@@ -25,14 +25,6 @@ Foodie is a frontend application for a food delivery web app built using React.j
 
 🍔 **Food Delivery**: Browse through a wide range of food options and place your order seamlessly.
 
-📍 **Location-based Services**: Get access to restaurants near your location for quick and convenient food delivery.
-
-🔍 **Search Functionality**: Easily search for your favorite dishes or restaurants using the search feature.
-
-📦 **Order Tracking**: Track your order in real-time and get updates on its status.
-
-💳 **Secure Payments**: Make secure online payments using various payment methods.
-
 🌟 **User-Friendly Interface**: Enjoy a smooth and intuitive user experience with a clean and responsive design.
 
 ## Installation
