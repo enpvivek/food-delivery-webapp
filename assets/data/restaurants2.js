@@ -35,7 +35,7 @@ const restaurants2 = [
           },
         ],
       },
-      isOpen: true,
+      isOpen: false,
       aggregatedDiscountInfoV2: {},
       type: "F",
       badgesV2: {
@@ -82,6 +82,7 @@ const restaurants2 = [
       costForTwo: "₹400 for two",
       cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
       avgRating: 4.2,
+      veg: false,
       parentId: "547",
       avgRatingString: "4.2",
       totalRatingsString: "100+",
@@ -153,7 +154,7 @@ const restaurants2 = [
         opened: true,
       },
       badges: {},
-      isOpen: true,
+      isOpen: false,
       type: "F",
       badgesV2: {
         entityBadges: {
@@ -265,7 +266,7 @@ const restaurants2 = [
         opened: true,
       },
       badges: {},
-      isOpen: true,
+      isOpen: false,
       type: "F",
       badgesV2: {
         entityBadges: {
@@ -395,7 +396,7 @@ const restaurants2 = [
         opened: true,
       },
       badges: {},
-      isOpen: true,
+      isOpen: false,
       aggregatedDiscountInfoV2: {},
       type: "F",
       badgesV2: {
@@ -513,7 +514,7 @@ const restaurants2 = [
         opened: true,
       },
       badges: {},
-      isOpen: true,
+      isOpen: false,
       type: "F",
       badgesV2: {
         entityBadges: {
@@ -797,7 +798,7 @@ const restaurants2 = [
         opened: true,
       },
       badges: {},
-      isOpen: true,
+      isOpen: false,
       type: "F",
       badgesV2: {
         entityBadges: {
@@ -994,7 +995,7 @@ const restaurants2 = [
           },
         ],
       },
-      isOpen: true,
+      isOpen: false,
       aggregatedDiscountInfoV2: {},
       type: "F",
       badgesV2: {
@@ -1118,7 +1119,7 @@ const restaurants2 = [
   {
     info: {
       id: "35887",
-      name: "Sweet Truth - Cake and Desserts",
+      name: "Sweet Truth ",
       cloudinaryImageId: "78408969d316991befba0a6eca303e1c",
       locality: "Minto Road",
       areaName: "Connaught Place",
@@ -1141,7 +1142,7 @@ const restaurants2 = [
         opened: true,
       },
       badges: {},
-      isOpen: true,
+      isOpen: false,
       type: "F",
       badgesV2: {
         entityBadges: {
@@ -1251,7 +1252,7 @@ const restaurants2 = [
   {
     info: {
       id: "68578",
-      name: "Baskin Robbins - Ice Cream Desserts",
+      name: "Baskin Robbins",
       cloudinaryImageId: "85ccae4e3576f9330af102c46ca85395",
       locality: "Pandara Road",
       areaName: "Pandara Market",
