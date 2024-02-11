@@ -109,7 +109,7 @@ export function Food() {
                 : "bg-gray-100 text-gray-700"
             }`}
           >
-            Ratings 4.0+
+            Ratings 4.2+
           </button>
         </div>
         <div className="flex text-sm font-semibold">
