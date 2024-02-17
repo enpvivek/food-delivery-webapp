@@ -1,4 +1,4 @@
-export function Footer() {
+export default function Footer() {
   return (
     <div className="w-full h-full flex flex-col">
       <div className="w-full h-auto bg-slate-200 flex">

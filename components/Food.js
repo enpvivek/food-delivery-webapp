@@ -1,12 +1,29 @@
-import restaurants2 from "../assets/data/restaurants2";
+//import restaurants2 from "../assets/data/restaurants2";
 import RestaurantCard from "./RestaurantCard";
 import { RxCross1 } from "react-icons/rx";
-import { useState } from "react";
-export function Food() {
+import { useEffect, useState } from "react";
+
+export default function Food() {
   // Declaring state variables for data and filter-reset-button
-  const [restaurants, setRestaurants] = useState(restaurants2);
+  const [restaurants2, setRestaurants2] = useState([]);
   const [filteredData, setFilteredData] = useState(restaurants2);
   const [selectedFilter, setSelectedFilter] = useState(null);
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const data = await fetch(
+          "https://foodie-enpvivek-backend.vercel.app/restaurants2"
+        );
+        const response = await data.json();
+        setRestaurants2(response);
+        setFilteredData(response); // Update filteredData with the fetched restaurants
+      } catch (error) {
+        console.log("Error in Restaurants2 section : ", error);
+      }
+    }
+    getData();
+  }, []);
 
   const handleFilter = (filterName, filterCondition) => {
     if (selectedFilter === filterName) {
@@ -19,14 +36,14 @@ export function Food() {
               (item1, item2) =>
                 item1.info.sla.lastMileTravel - item2.info.sla.lastMileTravel
             )
-          : restaurants.filter(filterCondition);
+          : restaurants2.filter(filterCondition);
       setFilteredData(filteredData);
       setSelectedFilter(filterName);
     }
   };
 
   const resetFilters = () => {
-    setFilteredData(restaurants);
+    setFilteredData(restaurants2);
     setSelectedFilter(null);
   };
 

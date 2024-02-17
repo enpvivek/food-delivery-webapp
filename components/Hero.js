@@ -1,7 +1,25 @@
-import suggestions from "../assets/data/suggestions";
+import { useEffect, useState } from "react";
+//import suggestions from "../assets/data/suggestions";
 import HeroCard from "./HeroCard";
 
-export function Hero() {
+export default function Hero() {
+  const [suggestions, setSuggestions] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const data = await fetch(
+          "https://foodie-enpvivek-backend.vercel.app/suggestions"
+        );
+        const response = await data.json();
+        setSuggestions(response);
+      } catch (error) {
+        console.log("Error in hero section : ", error);
+      }
+    }
+    getData();
+  }, []);
+
   return (
     <div className="flex w-full h-auto flex-col p-5 lg:px-32">
       <div className="w-full flex text-3xl font-bold my-5">

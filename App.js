@@ -1,9 +1,14 @@
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+
 import About from "./components/About";
-import { Food } from "./components/Food";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Restaurants } from "./components/Restaurants";
+import Food from "./components/Food";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Restaurants from "./components/Restaurants";
+import Error from "./components/Error";
 
 export function App() {
   return (
@@ -12,19 +17,39 @@ export function App() {
       {/* Header */}
       <Header />
 
-      {/* What's on Your Mind Section */}
-      <Hero />
-
-      {/* Top Restaurants Section */}
-      <Restaurants />
-
-      {/* Food Listing */}
-      <Food />
-
-      {/* Nearby & Suggestions */}
+      {/* Body */}
+      <Outlet />
 
       {/* Footer */}
       <Footer />
     </div>
   );
 }
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: (
+          <>
+            <Hero />
+            <Restaurants />
+            <Food />
+          </>
+        ),
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+    ],
+    errrorElement: <Error />,
+  },
+]);
+
+const container = document.getElementById("app");
+const root = createRoot(container);
+root.render(<RouterProvider router={appRouter} />);

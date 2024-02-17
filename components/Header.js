@@ -2,7 +2,7 @@ import logo from "../assets/images/logo-240.png";
 import { RiShoppingCartLine, RiSearchLine } from "react-icons/ri";
 import { TbDiscount2, TbInfoCircle, TbUserCircle } from "react-icons/tb";
 
-export function Header() {
+export default function Header() {
   return (
     <div className="w-full h-auto sticky top-0 z-10 flex flex-row p-4 lg:px-32 justify-between bg-primary">
       <div className="flex flex-row items-center">
